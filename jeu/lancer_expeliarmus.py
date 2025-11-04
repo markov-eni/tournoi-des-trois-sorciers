@@ -4,5 +4,5 @@ class LancerExpeliarmus(LancerSortilege):
 
     @staticmethod
     def lancer_sort():
-        print("Expeliarmus")
+        return "Expeliarmus"
 

@@ -18,4 +18,4 @@ class Sorcier(Personnage):
         self.lancer_sortilege = lancer_sortilege
 
     def attaquer(self):
-        self.lancer_sortilege()
+        print(self.lancer_sortilege())
