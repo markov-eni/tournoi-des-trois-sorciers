@@ -5,7 +5,9 @@ class BaguetteMagique(Equipement):
 
     durabilite = 100 
 
-    pouvoir = 50
+    puissance : int 
+
+    bois : str 
     
     def __init__(self):
         pass

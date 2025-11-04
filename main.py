@@ -1,13 +1,14 @@
-from equipements import BaguetteMagiqueSingleton
+from equipements import BalaisSorcierSingleton, BaguetteMagiqueBuilder
 from objets import BagueFactory , ClefFactory
 
-baguette_singleton =  BaguetteMagiqueSingleton()
 
-baguette_magique = baguette_singleton.get_baguette()
+# 1. Singleton 
 
-print(baguette_magique)
+balais_sorcier = BalaisSorcierSingleton().get_balais()
 
-# Remplir le sac à dos 
+print(balais_sorcier)
+
+#2. Factory
 sac = []
 
 bague  = BagueFactory.create_object()
@@ -17,3 +18,19 @@ sac.append(bague)
 sac.append(clef)
 
 print(sac)
+
+
+# 3. Builder
+
+baguette_magique_surpuissante = BaguetteMagiqueBuilder().bois("sureau").puissance("99").create()
+
+print(baguette_magique_surpuissante)
+
+# 4. Prototype 
+
+balais_sorcier_copy = balais_sorcier.__clone__()
+
+print(balais_sorcier, balais_sorcier_copy)
+
+# 5. Abstract Factory
+
