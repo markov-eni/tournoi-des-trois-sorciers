@@ -1,5 +1,5 @@
-from objets import Objet
-from jeu.personnage import Personnage
+from domain.objets import Objet
+from domain.personnages import Personnage
 from typing import List
 from abc import ABC
 

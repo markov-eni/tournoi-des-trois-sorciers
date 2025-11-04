@@ -1,12 +1,12 @@
-from jeu.partie import Partie
-from jeu.sorcier import Sorcier
-from jeu.epreuve import Epreuve
+from domain.parties import Partie
+from domain.personnages import Sorcier
+from domain.epreuves import Epreuve
 
 class TournoiTroisSorciers(Partie):
 
     def __init__(self):
 
-        epreuve_oeuf_dragon = Epreuve("Epreuve de l'oeuf du dragon","<desc>",[]) # not solid 
+        epreuve_oeuf_dragon = Epreuve("Epreuve de l'oeuf du dragon","<desc>",[]) 
         epreuve_lac = Epreuve("Epreuve du lac","<desc>",[])
         epreuve_labyrinthe = Epreuve("Epreuve labyrinthe","<desc>",[])
 

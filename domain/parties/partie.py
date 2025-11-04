@@ -1,7 +1,7 @@
 from abc import ABC , abstractmethod
 from typing import List
-from jeu.epreuve import Epreuve
-from jeu.personnage import Personnage
+from domain.epreuves import Epreuve
+from domain.personnages import Personnage
 
 class Partie(ABC):
     """

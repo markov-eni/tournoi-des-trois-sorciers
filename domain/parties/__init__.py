@@ -1,0 +1,2 @@
+from domain.parties.partie import Partie
+from domain.parties.tournoi_trois_sorciers import TournoiTroisSorciers

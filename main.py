@@ -4,8 +4,9 @@ Harry Potter et la coupe de Feu :
     REMAKE du tournoi des 3 sorciers 
 
 """
-
-from jeu import Sorcier, TournoiTroisSorciers, LancerAvadaKeavra, SorcierGris
+from domain.parties import  TournoiTroisSorciers
+from domain.lancer_sort import LancerAvadaKedavra
+from domain.personnages import Sorcier, SorcierGris
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
 
     nom = "Tom Jedusor"
     maison = "Serpentard"
-    lancer_sortilege = LancerAvadaKeavra.lancer_sort
+    lancer_sortilege = LancerAvadaKedavra.lancer_sort
     
     sorcier = Sorcier(nom, maison,lancer_sortilege ) # => not solid
 
