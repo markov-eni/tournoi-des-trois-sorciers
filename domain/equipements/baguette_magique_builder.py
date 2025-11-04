@@ -1,4 +1,4 @@
-from equipements import BaguetteMagique
+from domain.equipements import BaguetteMagique
 
 
 class BaguetteMagiqueBuilder():

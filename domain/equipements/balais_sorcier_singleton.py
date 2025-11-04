@@ -1,4 +1,4 @@
-from equipements import BalaisSorcier
+from domain.equipements import BalaisSorcier
 
 
 class BalaisSorcierSingleton():

@@ -1,4 +1,4 @@
-from equipements.equipement import Equipement
+from domain.equipements.equipement import Equipement
 
 
 class BaguetteMagique(Equipement):

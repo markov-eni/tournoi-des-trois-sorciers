@@ -1,0 +1,6 @@
+from domain.equipements.equipement import Equipement
+from domain.equipements.baguette_magique import BaguetteMagique
+from domain.equipements.balais_sorcier import BalaisSorcier
+from domain.equipements.baguette_magique_singleton import BaguetteMagiqueSingleton
+from domain.equipements.balais_sorcier_singleton import BalaisSorcierSingleton
+from domain.equipements.baguette_magique_builder import BaguetteMagiqueBuilder
