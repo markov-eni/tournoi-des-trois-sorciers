@@ -1,34 +1,37 @@
 """
-Harry Potter et la coupe de Feu : 
+------ Harry Potter et la coupe de Feu --------
 
-    REMAKE du tournoi des 3 sorciers 
+    Le Tournoi des 3 sorciers
 
 """
-from domain.parties import  TournoiTroisSorciers
+from domain.parties import  TournoiTroisSorciers , ProxyTournoiTroisSorciers
 from domain.lancer_sort import LancerAvadaKedavra
-from domain.personnages import Sorcier, SorcierGris
+from domain.personnages import SorcierBuilder, SorcierGris
 
 
 def main():
 
     # 1. Creation du Personnage
 
-    nom = "Tom Jedusor"
-    maison = "Serpentard"
+    nom ="Tom Jedusor" # input("Entrer votre nom :")
+    maison ="Serpentard" # input("Entrer votre nom de maison (Gryffondor, Serpentard) :")
     lancer_sortilege = LancerAvadaKedavra.lancer_sort
     
-    sorcier = Sorcier(nom, maison,lancer_sortilege ) # => not solid
+    sorcier = SorcierBuilder().create().nom(nom).maison(maison).lancer_sortilege(lancer_sortilege).build()
 
     print(sorcier.attaquer())
 
-    # 2. Sorcier Gris
+    # 2. Sorcier Gris  ( decorator )
     sorcier_gris = SorcierGris(sorcier)
 
     print(sorcier_gris.attaquer())
 
 
-    # 2. Jouer la partie
-    partie = TournoiTroisSorciers().jouer(sorcier)
+    # 2. Jouer la partie via un proxy
+    nbr_joueurs =  1
+    partie = ProxyTournoiTroisSorciers(nbr_joueurs).jouer(sorcier)
+
+    # 3. 
 
 if __name__ == "__main__":
     main()

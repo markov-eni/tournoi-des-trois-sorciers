@@ -7,15 +7,7 @@ class Sorcier(Personnage):
 
     equipements : List[Equipement]
     
-    def __init__(self, 
-        name :str , 
-        maison : str, 
-        lancer_sortilege  # le sorcier ne connait qu'unseul type de lancer de sortilege
-
-    )->None:
-        self.name = name
-        self.maison = maison 
-        self.lancer_sortilege = lancer_sortilege
-
+    def __init__(self)->None:
+        pass
     def attaquer(self)->str:
         return self.lancer_sortilege()
