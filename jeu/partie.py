@@ -1,6 +1,7 @@
 from abc import ABC , abstractmethod
 from typing import List
-from jeu import Epreuve, Personnage
+from jeu.epreuve import Epreuve
+from jeu.personnage import Personnage
 
 class Partie(ABC):
     """
@@ -16,5 +17,5 @@ class Partie(ABC):
         pass
 
     @abstractmethod
-    def fin(self):
+    def game_over(self):
         pass

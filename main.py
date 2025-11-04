@@ -1,30 +1,23 @@
 """
+Harry Potter et la coupe de Feu : 
 
+    REMAKE du tournoi des 3 sorciers 
 
 """
-from equipements import BalaisSorcierSingleton, BaguetteMagiqueBuilder
-from sorcier import Sorcier
-from epreuve import Epreuve
+
+from jeu import Sorcier, TournoiTroisSorciers
 
 
-def tournoi_3_sorciers():
+def main():
 
-    
+    # 1. Creation du Personnage
 
-# 1. Creation du sorcier
-sorcier = Sorcier()
+    nom = "Tom Jedusor"
+    maison = "Serpentard"
+    sorcier = Sorcier(nom, maison)
 
-# 2. Selection des equipements
+    # 2. Jouer la partie
+    partie = TournoiTroisSorciers().jouer(sorcier)
 
-balais_sorcier = BalaisSorcierSingleton().get_balais()
-modeste_baguette_magique = BaguetteMagiqueBuilder().bois("charme").puissance("41").create()
-
-# 3. Creation des épreuves
-
-
-
-# 4. Resultat 
-
-
-if __name__ = "__main__":
-    
+if __name__ == "__main__":
+    main()

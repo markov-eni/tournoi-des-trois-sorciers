@@ -1,15 +1,16 @@
 from objets import Objet
+from jeu.personnage import Personnage
 from typing import List
 from abc import ABC
 
-class Epreuve(ABC):
-    def __init__(nom :str , description ,objets: List[Objet]):
+class Epreuve():
+    def __init__(self, nom :str , description ,objets: List[Objet]):
         self.nom = nom
         self.description = description
         self.objets = objets
         
-    def tenter(self)->bool:
-        pass
+    def tenter(self, personnage : Personnage)->bool:
+        return True
 
     def reussir(self):
-        pass
+        return True

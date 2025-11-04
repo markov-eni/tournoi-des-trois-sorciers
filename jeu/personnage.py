@@ -1,3 +1,4 @@
 
 class Personnage():
-    pass
+    def __init__(self):
+        pass

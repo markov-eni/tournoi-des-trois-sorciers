@@ -1,6 +1,6 @@
 from typing import List
 from equipements import Equipement
-from jeu import Personnage
+from jeu.personnage import Personnage
 
 
 class Sorcier(Personnage):
