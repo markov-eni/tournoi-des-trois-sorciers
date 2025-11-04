@@ -5,7 +5,7 @@ Harry Potter et la coupe de Feu :
 
 """
 
-from jeu import Sorcier, TournoiTroisSorciers
+from jeu import Sorcier, TournoiTroisSorciers, LancerExpectoPatronum
 
 
 def main():
@@ -14,7 +14,11 @@ def main():
 
     nom = "Tom Jedusor"
     maison = "Serpentard"
-    sorcier = Sorcier(nom, maison)
+    lancer_sortilege = LancerExpectoPatronum.lancer_sort
+    
+    sorcier = Sorcier(nom, maison,lancer_sortilege ) # => not solid
+
+    sorcier.attaquer()
 
     # 2. Jouer la partie
     partie = TournoiTroisSorciers().jouer(sorcier)
