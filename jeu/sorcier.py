@@ -1,8 +1,9 @@
 from typing import List
 from equipements import Equipement
+from jeu import Personnage
 
 
-class Sorcier():
+class Sorcier(Personnage):
 
     equipements : List[Equipement]
     
