@@ -1,5 +1,5 @@
-from jeu.personnage import Personnage
-from jeu.sorcier import Sorcier
+from domain.personnages import Personnage
+from domain.personnages import Sorcier
 
 class SorcierGris(Personnage):
 

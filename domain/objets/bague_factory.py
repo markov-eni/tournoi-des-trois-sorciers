@@ -1,5 +1,5 @@
-from objets.objet_factory import ObjetFactory
-from objets.bague import Bague 
+from domain.objets.objet_factory import ObjetFactory
+from domain.objets.bague import Bague 
 
 
 class BagueFactory(ObjetFactory):

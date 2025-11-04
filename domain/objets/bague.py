@@ -1,4 +1,4 @@
-from objets.objet import Objet
+from domain.objets.objet import Objet
 
 
 class Bague(Objet):

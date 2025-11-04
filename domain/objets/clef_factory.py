@@ -1,5 +1,5 @@
-from objets.objet_factory import ObjetFactory
-from objets.clef import Clef 
+from domain.objets.objet_factory import ObjetFactory
+from domain.objets.clef import Clef 
 
 
 class ClefFactory(ObjetFactory):
