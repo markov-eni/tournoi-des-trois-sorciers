@@ -17,5 +17,5 @@ class Sorcier(Personnage):
         self.maison = maison 
         self.lancer_sortilege = lancer_sortilege
 
-    def attaquer(self):
-        print(self.lancer_sortilege())
+    def attaquer(self)->str:
+        return self.lancer_sortilege()

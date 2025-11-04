@@ -16,4 +16,4 @@ class SorcierGris(Personnage):
         self.sorcier = sorcier
 
     def attaquer(self):
-        print(self.sorcier.attaquer() + "  Puissance 1000 ! ")
+        return self.sorcier.attaquer() + "  Puissance 1000 ! "
