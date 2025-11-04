@@ -1,7 +1,7 @@
 from typing import List
-from equipements import Equipement
-from domain.personnages.personnage import Personnage
-from domain.personnages.lancer_sortilege import LancerSortilege
+from domain.equipements import Equipement
+from domain.personnages import Personnage
+from domain.lancer_sort import LancerSortilege
 
 class Sorcier(Personnage):
 

@@ -1,3 +1,3 @@
-from personnages.personnage import Personnage
-from personnages.sorcier_gris import SorcierGris
-from personnages.sorcier import Sorcier
+from domain.personnages.personnage import Personnage
+from domain.personnages.sorcier_gris import SorcierGris
+from domain.personnages.sorcier import Sorcier

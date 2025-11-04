@@ -1,4 +1,4 @@
-from jeu.lancer_sortilege import LancerSortilege
+from domain.lancer_sort import LancerSortilege
 
 class LancerExpectoPatronum(LancerSortilege):
 
