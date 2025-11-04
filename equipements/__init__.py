@@ -1,0 +1,5 @@
+from equipements.equipement import Equipement
+from equipements.baguette_magique import BaguetteMagique
+from equipements.balais_sorcier import BalaisSorcier
+from equipements.baguette_magique_singleton import BaguetteMagiqueSingleton
+from equipements.balais_sorcier_singleton import BalaisSorcierSingleton
