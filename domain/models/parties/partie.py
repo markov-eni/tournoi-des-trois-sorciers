@@ -2,7 +2,7 @@ from abc import ABC , abstractmethod
 from typing import List
 from domain.models.epreuves import Epreuve
 from domain.models.personnages import Personnage
-from domain.models.parties import EtatPartie, ContextPartie
+from domain.models.parties.etats import EtatPartie, ContextPartie
 
 class Partie(ABC, ContextPartie):
     """

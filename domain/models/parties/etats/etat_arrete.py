@@ -1,4 +1,5 @@
-from domain.models.parties import EtatPartie, EtatEnCours, ContextPartie
+from domain.models.parties.etats import EtatPartie, ContextPartie
+from domain.models.parties.etats.etat_en_cours import EtatEnCours
 
 class EtatArrete(EtatPartie):
 

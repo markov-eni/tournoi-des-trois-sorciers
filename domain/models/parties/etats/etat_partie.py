@@ -1,5 +1,5 @@
 from abc import ABC , abstractmethod
-from domain.models.parties import ContextPartie
+from domain.models.parties.etats import ContextPartie
 
 class EtatPartie(ABC):
 
