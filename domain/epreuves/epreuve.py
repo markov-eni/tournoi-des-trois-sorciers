@@ -4,10 +4,11 @@ from typing import List
 from abc import ABC, abstractmethod
 
 class Epreuve(ABC):
-    def __init__(self, nom :str , description ,objets: List[Objet]):
+    def __init__(self, nom :str , description :str, actions : List)->None:
         self.nom = nom
         self.description = description
-        self.objets = objets
+        self.actions = actions
+        
         
     @abstractmethod
     def tenter(self, personnage : Personnage)->bool:
