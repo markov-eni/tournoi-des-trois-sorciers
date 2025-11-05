@@ -5,3 +5,28 @@
 
 </div>
 
+## ⚡️ Présentation du jeu
+Définissez votre sorcier et remportez le tournoi des 3 sorciers ! <br>
+Ce tournoi est composé de 3 épreuves :
+- La quête de l'oeuf de dragon
+- La nage du lac aux sirènes
+- La conquête du labyrinthe de Poudlard
+
+Toute erreur vous sera fatale.
+
+
+## ✨ Design pattern implémentés  
+
+**creation**
+- factory : [bague_factory](domain/objets/bague_factory.py)
+- singleton : [baguette_magique](domain/equipements/baguette_magique_singleton.py)
+- builder : [baguette_magique](domain/equipements/baguette_magique_builder.py)
+- clone : [balais_sorcier](domain/equipements/balais_sorcier.py)
+
+**structurel**
+- proxy :  [tournoi_trois_sorciers](domain/parties/tournoi_trois_sorciers.py)
+- bridge : [lancer_sortilege](domain/lancer_sort/lancer_sortilege.py)
+- decorator : [sorcier_gris](domain/personnages/sorcier_gris.py)
+
+
+**comportementaux**
