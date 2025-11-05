@@ -1,6 +1,6 @@
 from domain.models.parties import Partie , PartieTournoiTroisSorciers
 from domain.models.personnages import Sorcier
-
+from domain.models.parties.etats import EtatPartie
 
 class ProxyPartieTournoiTroisSorciers(Partie):
     """
@@ -15,11 +15,15 @@ class ProxyPartieTournoiTroisSorciers(Partie):
 
     nombre_de_joueurs : int 
     
-    def __init__(self, nombre_de_joueurs : int): 
+    def __init__(self, etat_initial : EtatPartie ,nombre_de_joueurs : int): 
         """
         """
-        self.tournoi_trois_sorciers = PartieTournoiTroisSorciers() # TODO : déplacer logique instanciation ailleur
+        
+        self.tournoi_trois_sorciers = PartieTournoiTroisSorciers(etat_initial) # TODO : déplacer logique instanciation ailleur
         self.nombre_de_joueurs = nombre_de_joueurs
+
+    def set_etat(self, etat_partie : EtatPartie):
+        self.tournoi_trois_sorciers.set_etat(etat_partie)
 
     def check_joueur_necessaires(self)->bool:
         if self.nombre_de_joueurs > 1 :

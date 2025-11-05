@@ -4,7 +4,7 @@ from domain.models.epreuves import Epreuve
 from domain.models.personnages import Personnage
 from domain.models.parties.etats import EtatPartie, ContextPartie
 
-class Partie(ABC, ContextPartie):
+class Partie(ContextPartie, ABC):
     """
     Une partie est composée d'un personnage surmontant différentes épreuves =
     """
@@ -19,8 +19,8 @@ class Partie(ABC, ContextPartie):
     # Probleme héritage de classe abstraite / interface
     # Toute partie doit avoir un etat initial
     # Mais toute partie doit implémenter sa façon de jouer
-    def __init__(self, etat_initial : EtatPartie):
-        self.set_etat(etat_partie)
+    def __init__(self):
+        pass
         
 
     @abstractmethod

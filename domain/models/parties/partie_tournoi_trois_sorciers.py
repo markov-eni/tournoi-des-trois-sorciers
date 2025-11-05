@@ -11,7 +11,7 @@ class PartieTournoiTroisSorciers(Partie):
     def __init__(self, etat_initial : EtatPartie):
 
 
-        super.__init__(etat_initial)
+        self.set_etat(etat_initial)
 
         
         # TODO : instancier les epreuves en dehors de la partie car une partie contient des épreuves 
@@ -20,6 +20,9 @@ class PartieTournoiTroisSorciers(Partie):
         epreuve_labyrinthe = Epreuve("Epreuve labyrinthe","<desc>",[])
 
         self.epreuves = [epreuve_oeuf_dragon, epreuve_lac, epreuve_labyrinthe]
+
+    def set_etat(self, etat_partie : EtatPartie ):
+        self.etat_partie = etat_partie
 
     def jouer(self, sorcier : Sorcier):
         for epreuve in self.epreuves : 

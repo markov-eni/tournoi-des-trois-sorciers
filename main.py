@@ -5,6 +5,7 @@
 
 """
 from domain.models.parties import  PartieTournoiTroisSorciers , ProxyPartieTournoiTroisSorciers
+from domain.models.parties.etats import EtatArrete
 from domain.models.lancer_sort import LancerAvadaKedavra
 from domain.models.personnages import SorcierBuilder, SorcierGris
 
@@ -30,7 +31,8 @@ def main():
 
     # 2. Jouer la partie via un proxy
     nbr_joueurs =  1
-    partie = ProxyTournoiTroisSorciers(nbr_joueurs).jouer(sorcier)
+    etat_initial = EtatArrete()
+    partie = ProxyPartieTournoiTroisSorciers(etat_initial, nbr_joueurs).jouer(sorcier)
 
     # 3. 
 

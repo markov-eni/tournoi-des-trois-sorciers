@@ -1,5 +1,5 @@
 from domain.models.parties.etats import EtatPartie, ContextPartie
-from domain.models.parties.etats.etat_en_cours import EtatEnCours
+import domain.models.parties.etats.etat_en_cours
 
 class EtatArrete(EtatPartie):
 
@@ -7,7 +7,7 @@ class EtatArrete(EtatPartie):
         pass
 
     def commencer( context : ContextPartie):
-        etat_en_cours = EtatEnCours()
+        etat_en_cours = etat_en_cours.EtatEnCours()
 
         context.set_etat(etat_en_cours)
 
