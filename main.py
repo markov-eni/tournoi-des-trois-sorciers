@@ -4,7 +4,7 @@
     Le Tournoi des 3 sorciers
 
 """
-from domain.models.parties import  TournoiTroisSorciers , ProxyTournoiTroisSorciers
+from domain.models.parties import  PartieTournoiTroisSorciers , ProxyPartieTournoiTroisSorciers
 from domain.models.lancer_sort import LancerAvadaKedavra
 from domain.models.personnages import SorcierBuilder, SorcierGris
 
@@ -15,7 +15,8 @@ def main():
 
     nom ="Tom Jedusor" # input("Entrer votre nom :")
     maison ="Serpentard" # input("Entrer votre nom de maison (Gryffondor, Serpentard) :")
-    lancer_sortilege = LancerAvadaKedavra.lancer_sort
+    lancer_sortilege = LancerAvadaKedavra.lancer_sort # bridge indiquant que un sorcier ne lancer qu'un seul type de sort 
+    # => un strategy pattern serait adapté pour changer de sort dynamiquement 
     
     sorcier = SorcierBuilder().create().nom(nom).maison(maison).lancer_sortilege(lancer_sortilege).build()
 

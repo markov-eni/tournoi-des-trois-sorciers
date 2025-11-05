@@ -2,15 +2,30 @@ from abc import ABC , abstractmethod
 from typing import List
 from domain.models.epreuves import Epreuve
 from domain.models.personnages import Personnage
+from domain.models.parties import EtatPartie, ContextPartie
 
-class Partie(ABC):
+class Partie(ABC, ContextPartie):
     """
     Une partie est composée d'un personnage surmontant différentes épreuves =
     """
+
+    etat_partie : EtatPartie
     
     personnage : Personnage
 
     epreuves : List[Epreuve]
+
+    # NOTE! 
+    # Probleme héritage de classe abstraite / interface
+    # Toute partie doit avoir un etat initial
+    # Mais toute partie doit implémenter sa façon de jouer
+    def __init__(self, etat_initial : EtatPartie):
+        self.set_etat(etat_partie)
+        
+
+    @abstractmethod
+    def set_etat(self, etat ):
+        pass
 
     @abstractmethod
     def jouer(self, personnage : Personnage):

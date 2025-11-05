@@ -1,8 +1,8 @@
-from domain.models.parties import Partie , TournoiTroisSorciers
+from domain.models.parties import Partie , PartieTournoiTroisSorciers
 from domain.models.personnages import Sorcier
 
 
-class ProxyTournoiTroisSorciers(Partie):
+class ProxyPartieTournoiTroisSorciers(Partie):
     """
         Design Pattern Proxy
 
@@ -18,7 +18,7 @@ class ProxyTournoiTroisSorciers(Partie):
     def __init__(self, nombre_de_joueurs : int): 
         """
         """
-        self.tournoi_trois_sorciers = TournoiTroisSorciers() # TODO : déplacer logique instanciation ailleur
+        self.tournoi_trois_sorciers = PartieTournoiTroisSorciers() # TODO : déplacer logique instanciation ailleur
         self.nombre_de_joueurs = nombre_de_joueurs
 
     def check_joueur_necessaires(self)->bool:
