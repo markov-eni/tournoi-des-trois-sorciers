@@ -31,3 +31,10 @@ Toute erreur vous sera fatale.
 
 **comportementaux**
 - etat : [etat de la partie](domain/models/parties/etats/)
+- iterator : [ iterer sur les interactions d'une épreuve](domain/models/epreuves/)
+
+
+
+## TODO
+- faire un singleton de factory ?
+- séprarer les interfaces des implémentations

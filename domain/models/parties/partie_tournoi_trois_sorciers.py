@@ -15,9 +15,9 @@ class PartieTournoiTroisSorciers(Partie):
 
         
         # TODO : instancier les epreuves en dehors de la partie car une partie contient des épreuves 
-        epreuve_oeuf_dragon = Epreuve("Epreuve de l'oeuf du dragon","<desc>",[]) 
-        epreuve_lac = Epreuve("Epreuve du lac","<desc>",[])
-        epreuve_labyrinthe = Epreuve("Epreuve labyrinthe","<desc>",[])
+        epreuve_oeuf_dragon = Epreuve("Epreuve de l'oeuf du dragon","<desc>") 
+        epreuve_lac = Epreuve("Epreuve du lac","<desc>")
+        epreuve_labyrinthe = Epreuve("Epreuve labyrinthe","<desc>")
 
         self.epreuves = [epreuve_oeuf_dragon, epreuve_lac, epreuve_labyrinthe]
 
