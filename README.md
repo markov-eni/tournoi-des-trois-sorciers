@@ -18,15 +18,16 @@ Toute erreur vous sera fatale.
 ## ✨ Design pattern implémentés  
 
 **creation**
-- factory : [bague_factory](domain/objets/bague_factory.py)
-- singleton : [baguette_magique](domain/equipements/baguette_magique_singleton.py)
-- builder : [baguette_magique](domain/equipements/baguette_magique_builder.py)
-- clone : [balais_sorcier](domain/equipements/balais_sorcier.py)
+- factory : [bague_factory](domain/models/objets/bague_factory.py)
+- singleton : [baguette_magique](domain/models/equipements/baguette_magique_singleton.py)
+- builder : [baguette_magique](domain/models/equipements/baguette_magique_builder.py)
+- clone : [balais_sorcier](domain/models/equipements/balais_sorcier.py)
 
 **structurel**
-- proxy :  [tournoi_trois_sorciers](domain/parties/tournoi_trois_sorciers.py)
-- bridge : [lancer_sortilege](domain/lancer_sort/lancer_sortilege.py)
-- decorator : [sorcier_gris](domain/personnages/sorcier_gris.py)
+- proxy :  [tournoi_trois_sorciers](domain/models/parties/tournoi_trois_sorciers.py)
+- bridge : [lancer_sortilege](domain/models/lancer_sort/lancer_sortilege.py)
+- decorator : [sorcier_gris](domain/models/personnages/sorcier_gris.py)
 
 
 **comportementaux**
+- etat : [etat de la partie](domain/models/parties/etats/)
