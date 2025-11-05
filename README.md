@@ -33,7 +33,7 @@ Toute erreur vous sera fatale.
 - etat : [etat de la partie](domain/models/parties/etats/)
 - iterator : [ iterer sur les interactions d'une épreuve](domain/models/epreuves/)
 
-
+etape : reussie, echec, en cours 
 
 ## TODO
 - faire un singleton de factory ?
