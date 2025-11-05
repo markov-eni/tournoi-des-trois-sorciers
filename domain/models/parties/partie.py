@@ -24,7 +24,7 @@ class Partie(ContextPartie, ABC):
         
 
     @abstractmethod
-    def set_etat(self, etat ):
+    def set_etat(self, etat : EtatPartie):
         pass
 
     @abstractmethod
