@@ -1,0 +1,4 @@
+from domain.models.lancer_sort.lancer_sortilege import LancerSortilege
+from domain.models.lancer_sort.lancer_avada_kedavra import LancerAvadaKedavra
+from domain.models.lancer_sort.lancer_expecto_patronum import LancerExpectoPatronum
+from domain.models.lancer_sort.lancer_expeliarmus import LancerExpeliarmus

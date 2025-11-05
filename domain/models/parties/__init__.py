@@ -1,0 +1,3 @@
+from domain.models.parties.partie import Partie
+from domain.models.parties.tournoi_trois_sorciers import TournoiTroisSorciers
+from domain.models.parties.proxy_tournoi_trois_sorciers import ProxyTournoiTroisSorciers

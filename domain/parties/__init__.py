@@ -1,3 +1,0 @@
-from domain.parties.partie import Partie
-from domain.parties.tournoi_trois_sorciers import TournoiTroisSorciers
-from domain.parties.proxy_tournoi_trois_sorciers import ProxyTournoiTroisSorciers

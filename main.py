@@ -4,9 +4,9 @@
     Le Tournoi des 3 sorciers
 
 """
-from domain.parties import  TournoiTroisSorciers , ProxyTournoiTroisSorciers
-from domain.lancer_sort import LancerAvadaKedavra
-from domain.personnages import SorcierBuilder, SorcierGris
+from domain.models.parties import  TournoiTroisSorciers , ProxyTournoiTroisSorciers
+from domain.models.lancer_sort import LancerAvadaKedavra
+from domain.models.personnages import SorcierBuilder, SorcierGris
 
 
 def main():
